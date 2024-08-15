@@ -1,0 +1,180 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-image: url('https://images.pexels.com/photos/221471/pexels-photo-221471.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+    background-size: cover;
+    background-position: center;
+}
+
+header {
+    position: relative;
+    padding: 0 2rem;
+    background-color: rgba(0, 0, 0, 0.238);
+}
+
+li {
+    display: flex;
+    list-style: none;
+    width: 10vh;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    width: 10vh;
+}
+
+a:hover {
+    color: rgba(24, 240, 168, 0.856);
+}
+
+nav {
+    width: 100%;
+    max-width: 1200px;
+    height: 60px;
+    margin: 10px, 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+button {
+    width: 120px;
+    padding: 2px;
+    background-color: #08d6d6;
+    color: #141414;
+    border: 1px solid #08d6d6;
+    border-radius: 5px;
+    outline: none;
+    font-size: 0.9rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+button:hover {
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.gillio {
+    width: 10%;
+    height: 60%;
+    border-radius: 50px;
+}
+
+.Links {
+    display: flex;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.pro {
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.pro:hover {
+    background-color: #fff;
+    color: #141414;
+}
+
+.burger-menu-button {
+    display: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+/*----burger menu----*/
+
+.burger-mobile {
+    display: none;
+    margin-left: 200px;
+    top: 60px;
+    overflow: hidden;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.238);
+    backdrop-filter: blur(15px);
+    padding-bottom: 0.7rem;
+}
+
+.burger-mobile .Links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.burger-mobile li {
+    padding: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.divider {
+    height: 1px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+    background-color: #fff;
+}
+
+.buttons-burger-menu {
+    gap: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*------Fonction open----*/
+
+.burger-mobile.open {
+    display: block;
+    height: 380px;
+}
+
+/*------REPONSIVE-------*/
+
+@media (max-width: 990px) {
+    header {
+        background: none;
+    }
+    nav .Links, nav .buttons {
+        display: none;
+    }
+    .burger-menu-button {
+        display: block;
+    }
+}
+
+/* Masquer le menu burger sur les grands écrans */
+@media (min-width: 991px) {
+    .burger-mobile {
+        display: none; }
+ }
